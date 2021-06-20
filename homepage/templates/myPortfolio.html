@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+</head>
+<body>
+    <header>
+        <a class="header-link" href="#">www.pythondoctor.com</a>
+        <nav>
+            <ul>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#">contact me?</a>
+                    <ul>
+                        <li><a href="tel:+2348026874564">call me</a></li>
+                        <li><a href="mailto:valentineprecious103@gmail.com">send me a mail</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="board">
+        <p>create a website that send the right message to your client</p>
+        
+        <div>
+            <a href="#">see website design for up for grab</a>
+        </div>
+    </div>
+
+    <div class="typer-box">
+        <h1 class="typer" id="main" data-words="hello! my name is chuks and this is my portfolio website., this website was built on django_raw html/css and javascript for cool effect like this one., i am fluent in those areas and frameworks., i love coding and i love making great stuff." data-delay="50" data-deleteDelay="5000", data-colors="#f5f5f5">
+            
+        </h1>
+    </div>
+
+    <section class="portfolio" id="portfolio">
+        <strong>personal information</strong>
+        <p>name: chukwudi precious valentine</p>
+        <p>phone: +234-802-6874-564</p>
+        <p>email: valentineprecious103@gmail.com</p>
+        <!-- another data -->
+        <strong>location</strong>
+        <p>country of origin: Nigeria</p>
+        <p>state of origin: imo state</p>
+        <p>state i live in: cross river state</p>
+        <p>city live in: calabar</p>
+        <!-- another data -->
+        <strong>location</strong>
+        <p>country of origin: Nigeria</p>
+        <p>state of origin: imo state</p>
+        <p>state i live in: cross river state</p>
+        <p>city live in: calabar</p>
+        <!-- another data -->
+        <strong>education</strong>
+        <p>high school: lime light secondary school</p>
+        <p>unity school: university of calabar</p>
+        <p>certificate: waec</p>
+        <!-- another data -->
+        <strong>skills</strong>
+        <p>web development, web design, data analysis, scripting</p>
+        <p>languages: python, javascript, html, css</p>
+        <p>frameworks: django</p>
+    </section>
+
+
+    <!-- for scripts -->
+    <script src="/static/typer.js"></script>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+</body>
+</html>
+<!-- <h1>Typer.js is
+    <span class="typer" id="main" data-words="great,fun,lightweight,easy" data-delay="300" data-deleteDelay="1000"></span>
+</h1> -->
+<!-- CSS -->
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #f3f3f3;
+        font-size: 18px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body{
+        background: linear-gradient(#333333ce, #333333ce),url(/static/photo/black\ .jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        background-color: #333333;
+        z-index: 9999;
+        width: 100vw;
+    }
+    header .header-link{
+        font-size: 120%;
+        font-weight: 100;
+        margin-left: 10px;
+        color: red;
+        text-transform: lowercase;
+    }
+    nav{
+        width: fit-content;
+        height: fit-content;
+        margin-top: 20px;
+    }
+    nav ul{
+        position: relative;
+        width: fit-content;
+    }
+    nav ul li{
+        float: left;
+        display: inline;
+    }
+    nav ul li a{
+        text-decoration: none;
+        margin: 0 10px;
+        color: #f3f3f3;
+        font-size: 80%;
+        font-weight: 100;
+    }
+    nav ul li ul{
+        display: none;
+    }
+    nav ul li ul li{
+        display: block;
+        width: 100%;
+        margin: 1px 0;
+    }
+    nav ul li ul li a{
+        color: #f3f3f3;
+        transition: ease-in-out 1s;
+    }
+    nav ul li ul li a:hover{
+        color: red;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #f5f5f5;
+    }
+    
+    nav ul li:hover ul{
+        margin-top: 0;
+        display: block;
+        background-color: #00000055;
+        height: fit-content;
+        position: absolute;
+        margin-left: 10px;
+        padding:10px 4px;
+        border-radius: 4px;
+    }
+    .board{
+        height: fit-content;
+        width: 97%;
+        position: absolute;
+        top: 25%;
+        left: 1%;
+        background-color: #00000055;
+    }
+    .board p{
+        text-align: center;
+        font-size: 110%;
+        font-weight: 100;
+        animation: ease-in 2s;
+        transition: linear 2s;
+    }
+    .board div{
+        width: 90%;
+        height: fit-content;
+        padding: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .board div a{
+        text-align: center;
+        font-weight: 100;
+        font-size: 80%;
+        color: red;
+        transition: ease-in-out 1s;
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .board div a:hover{
+        color: yellow;
+    }
+
+    .typer-box{
+        position: absolute;
+        top: 44%;
+        margin-left: 1%;
+        padding: 5px;
+        text-align: center;
+        height: 90px;
+    }
+    .typer-box h1{
+        font-weight: 100;
+    }
+    .portfolio{
+        background-color: #f5f5f5;
+        width: 96%;
+        height: fit-content;
+        padding: 5px;
+        margin: 20px 1.5px;
+        padding-bottom: 10px;
+        margin-top: 98vh;
+    }
+    .portfolio strong{
+        color: #333;
+    }
+    .portfolio p{
+        color: #555;
+        font-size: 80%;
+        margin-top: 5px;
+    }
+</style>
